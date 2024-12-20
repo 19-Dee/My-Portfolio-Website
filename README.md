@@ -16,7 +16,7 @@
 
    <div align="center">
      I built this project step by step with a detailed tutorial on Adrian Hajdin's YouTube channel
-     <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> 
+     <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery!</b></a> 
     </div>
 </div>
 
@@ -26,9 +26,7 @@
 2. ⚙️ [Tech Stack](#tech-stack)
 3. 🔋 [Features](#features)
 4. 🤸 [Quick Start](#quick-start)
-5. 🕸️ [Code to Copy](#snippets)
-6. 🔗 [Assets](#links)
-7. 🚀 [More](#more)
+5. 🔗 [Assets](#links)
 
 ## <a name="introduction">🤖 Introduction</a>
 
