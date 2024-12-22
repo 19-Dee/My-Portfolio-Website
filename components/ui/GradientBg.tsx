@@ -41,7 +41,7 @@ export const BackgroundGradientAnimation = ({
   const [tgY, setTgY] = useState(0);
 
   useEffect(() => {
-    if (typeof document !== "undefined") {
+    if (typeof window !== "undefined" && document) {
       document.body.style.setProperty(
         "--gradient-background-start",
         gradientBackgroundStart
@@ -74,16 +74,13 @@ export const BackgroundGradientAnimation = ({
 
   useEffect(() => {
     function move() {
-      if (!interactiveRef.current) {
-        return;
-      }
-      setCurX(curX + (tgX - curX) / 20);
-      setCurY(curY + (tgY - curY) / 20);
+      if (!interactiveRef.current) return;
+      setCurX((prevX) => prevX + (tgX - prevX) / 20);
+      setCurY((prevY) => prevY + (tgY - prevY) / 20);
       interactiveRef.current.style.transform = `translate(${Math.round(
         curX
       )}px, ${Math.round(curY)}px)`;
     }
-
     move();
   }, [tgX, tgY]);
 
@@ -97,7 +94,7 @@ export const BackgroundGradientAnimation = ({
 
   const [isSafari, setIsSafari] = useState(false);
   useEffect(() => {
-    if (typeof navigator !== "undefined") {
+    if (typeof window !== "undefined" && navigator) {
       setIsSafari(/^((?!chrome|android).)*safari/i.test(navigator.userAgent));
     }
   }, []);
