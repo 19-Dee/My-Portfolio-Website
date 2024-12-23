@@ -11,30 +11,30 @@ export const gridItems = [
     title: "Certified in Cloud and Cybersecurity",
     description: "Click Me!",
     className:
-      "col-span-1 md:col-span-1 lg:col-span-2 row-span-1 relative rounded-lg flex flex-col justify-between",
+      "col-span-1 md:col-span-1 lg:col-span-2 row-span-1 relative rounded-lg flex flex-col justify-between p-4 space-y-2", // Unified spacing and layout
     imgClassName:
       "absolute top-0 left-0 w-full h-full object-cover overflow-hidden transition-transform duration-300 group-hover:scale-105",
-    titleClassName:
-      "absolute bottom-4 left-4 text-white text-lg font-semibold z-10",
-    descriptionClassName: "absolute top-4 left-4 text-white text-sm z-10",
+    titleClassName: "text-white text-lg font-semibold z-10 mt-4", // Consistent spacing
+    descriptionClassName: "text-white text-sm z-10 mt-2", // Consistent margin
     img: "/certs11.svg",
     spareImg: "",
     link: "https://www.credly.com/users/dishen-patel.2ca19138",
   },
   {
-    id: 2,
-    title: "Flexible communicator",
-    description: "Driving success across diverse teams and time zones.",
-    className:
-      "col-span-1 md:col-span-1 lg:col-span-2 row-span-1 relative rounded-lg flex flex-col justify-between",
-    imgClassName:
-      "absolute top-0 left-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105",
-    titleClassName:
-      "absolute bottom-4 left-4 text-white text-lg font-semibold z-10",
-    descriptionClassName: "absolute top-4 left-4 text-white text-sm z-10",
-    img: "",
-    spareImg: "",
-  },
+  id: 2,
+  title: "Flexible communicator",
+  description: "Driving success across diverse teams and time zones.",
+  className:
+    "col-span-1 md:col-span-1 lg:col-span-2 row-span-1 relative rounded-lg flex flex-col justify-between", // Added space-y-2 for spacing
+  imgClassName:
+    "absolute top-0 left-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105",
+  titleClassName:
+    "text-white text-lg font-semibold z-10 mt-4", // Added mt-4 for spacing
+  descriptionClassName:
+    "text-white text-sm z-10 mt-2", // Added mt-2 for margin
+  img: "",
+  spareImg: "",
+},
   {
     id: 3,
     title: "My Tech Stack",

@@ -21,7 +21,7 @@ const Clients = () => {
             title: testimonial.title,
           }))}
           direction="right"
-          speed="slow"
+          speed="fast"
         />
       </div>
     </section>
